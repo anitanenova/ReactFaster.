@@ -1,0 +1,53 @@
+.article {
+	width: 100%;
+	height: 100%;
+
+	a {
+		color: $color-copy-dark;
+	}
+
+	&-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	&-title {
+		font-size: 2em;
+		font-weight: 700;
+		line-height: 1.375;
+		margin-bottom: 2rem;
+	}
+
+	&-thumbnail {
+		.thumbnail {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&-except {
+		.text {
+			font-size: 1.125em;
+			font-weight: 400;
+			line-height: 1.625;
+			margin-top: 1.875rem;
+		}
+	}
+}
+
+.article-entry {
+	&-title {
+		font-size: 1.125em;
+		font-weight: 500;
+		line-height: 1.375;
+		margin-top: 0.625em;
+
+		margin-bottom: 3.125em;
+	}
+
+	.article-last {
+		margin-bottom: 0;
+	}
+}

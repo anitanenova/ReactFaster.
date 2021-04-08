@@ -1,0 +1,24 @@
+.search-wrapper {
+	width: 100%;
+	height: 100%;
+	max-width: 15em;
+	max-height: 2.125em;
+	background-color: $color-bg-light-gray;
+	border-radius: $radius-middle;
+	color: $color-copy-muted;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	.search-icon {
+		padding: 0.75em;
+	}
+
+	.search-input {
+		background-color: $color-bg-light-gray;
+
+		color: $color-copy-muted;
+		border: none;
+		outline: none;
+	}
+}

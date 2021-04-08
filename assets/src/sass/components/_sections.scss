@@ -4,7 +4,7 @@
  */
 .section-fullwidth {
 	$border-color: #ddd;
-	$section-padding: 80px;
+	$section-padding: 60px;
 
 	padding: #{$section-padding} 0;
 	position: relative;
@@ -51,5 +51,41 @@
 		a {
 			color: white;
 		}
+	}
+}
+
+.section-welcome {
+	.categories-wrapper {
+		.section-heading {
+			margin-bottom: 1.625em;
+			text-align: start;
+		}
+
+		.heading-title {
+			font-size: 1em;
+			font-weight: 600;
+			margin: 0;
+		}
+	}
+}
+
+.section-published {
+	padding: 2.125em 0 3.125em 0;
+	.header-published {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin: 0 0 1.25em 0;
+	}
+
+	.published-title {
+		font-weight: 700;
+		font-size: 1.375em;
+		line-height: 1.625;
+	}
+
+	.btn-read-more {
+		margin-top: 3.125em;
 	}
 }

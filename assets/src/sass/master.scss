@@ -30,6 +30,7 @@ $fa-font-path: "../fonts";
 // Separating the largest parts of the site in specific files.
 @import "layout/general";
 @import "layout/header";
+@import "layout/footer";
 
 // Any other module that can be reused multuple times.
 @import "components/buttons";
@@ -39,6 +40,9 @@ $fa-font-path: "../fonts";
 @import "components/comments";
 @import "components/widgets";
 @import "components/input";
+@import "components/categorie";
+@import "components/article";
+@import "components/search";
 
 // If there is anything specific for a page it should be in this folder
 @import "pages/404";
@@ -56,7 +60,6 @@ $fa-font-path: "../fonts";
 @import "prebuilds/section-hero.scss";
 @import "prebuilds/section-features-grid.scss";
 @import "prebuilds/section-call-to-action.scss";
-@import "prebuilds/section-welcome.scss";
 
 @import "prebuilds/elements/faq-elements.scss";
 @import "prebuilds/elements/tooltip.scss";
