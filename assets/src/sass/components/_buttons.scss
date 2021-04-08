@@ -1,28 +1,28 @@
 .btn {
-  text-decoration: none;
-  display: inline-block;
+	text-decoration: none;
+	display: inline-block;
 
-  &:hover {
-    cursor: pointer;
-  }
+	&:hover {
+		cursor: pointer;
+	}
 
-  &-primary {
-    border-radius: $radius-primary;
-    padding: 0.375em 0.75em;
-    color: $color-bg-white;
-    font-weight: 600;
-  }
+	&-primary {
+		border-radius: $radius-primary;
+		padding: 0.375em 0.75em;
+		color: $color-bg-white;
+		font-weight: 600;
+	}
 
-  &-inline {
-    color: $color-copy-dark;
-    font-weight: 700;  
-  }
+	&-inline {
+		color: $color-copy-dark;
+		font-weight: 700;
+	}
 
-  &-light{
-    background-color: $color-bg-light;
-  }
+	&-light {
+		background-color: $color-bg-light;
+	}
 
-  &-red{
-    background-color: $color-bg-primary;
-  }
+	&-red {
+		background-color: $color-bg-primary;
+	}
 }

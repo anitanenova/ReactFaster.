@@ -8,6 +8,46 @@
 	// height: $layout-header-height;
 }
 
+.site-subheader {
+	background-color: $color-bg-primary;
+
+	.site-subheader-inner {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		height: 3em;
+	}
+}
+
+.site-navigation-subheader {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+	&::before,
+	&::after {
+		content: url(../../dist/images/fire.svg);
+		position: static;
+		height: 1.25em;
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin: 0 1em;
+	}
+
+	.menu-item-link {
+		padding: 0.875em 1em;
+		font-weight: 700;
+		color: $color-bg-white;
+	}
+}
+
 .site-header-primary {
 	.site-header-inner {
 		display: flex;

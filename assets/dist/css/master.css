@@ -5514,6 +5514,39 @@ readers do not read off random characters that represent icons */
 .site-header {
   position: relative; }
 
+.site-subheader {
+  background-color: #f84444; }
+
+.site-subheader .site-subheader-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 3em; }
+
+.site-navigation-subheader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+.site-navigation-subheader::before, .site-navigation-subheader::after {
+  content: url(../../dist/images/fire.svg);
+  position: static;
+  height: 1.25em; }
+
+.site-navigation-subheader .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1em; }
+
+.site-navigation-subheader .menu-item-link {
+  padding: 0.875em 1em;
+  font-weight: 700;
+  color: #ffffff; }
+
 .site-header-primary {
   border-bottom: 1px solid #dddddd; }
 
