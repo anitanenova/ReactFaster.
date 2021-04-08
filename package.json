@@ -1,9 +1,9 @@
 {
-  "name": "dxstarter",
+  "name": "reactfaster.",
   "version": "1.5.1",
   "description": "Quick settings for developing themes.",
   "main": "Gulpfile.js",
-  "repository": "https://github.com/DevriX/DX-Starter",
+  "repository": "https://github.com/anitanenova/ReactFaster..git",
   "sasslintConfig": ".sass-lint.yml",
   "devDependencies": {
     "@babel/cli": "^7.12.10",
