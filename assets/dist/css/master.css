@@ -5781,23 +5781,22 @@ readers do not read off random characters that represent icons */
   color: #000000; }
 
 .categorie-thumbnail {
+  position: relative;
   width: 100%;
-  height: 100%;
-  max-width: 2.5em;
-  max-height: 2.5em;
-  margin-right: 1em;
-  border-radius: 0.375em; }
+  height: 0;
+  padding-top: calc(100% * 1 / 7);
+  max-width: 2.5em; }
 
 .categorie-thumbnail .thumbnail {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
 
 .categorie-title {
   font-size: 1em;
   font-weight: 500;
-  margin: 0; }
+  margin: 0 0 0 1em; }
 
 .article {
   width: 100%;
@@ -5817,11 +5816,17 @@ readers do not read off random characters that represent icons */
   line-height: 1.375;
   margin-bottom: 2rem; }
 
-.article-thumbnail .thumbnail {
+.article-thumbnail {
+  position: relative;
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover; }
+  height: 0;
+  padding-top: calc(100% * 2 / 3.15); }
+
+.article-thumbnail .thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
 
 .article-except .text {
   font-size: 1.125em;
@@ -5838,6 +5843,18 @@ readers do not read off random characters that represent icons */
 
 .article-entry .article-last {
   margin-bottom: 0; }
+
+.article-entry .article-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: calc(100% * 1 / 2); }
+
+.article-entry .article-thumbnail .thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
 
 .search-wrapper {
   width: 100%;
