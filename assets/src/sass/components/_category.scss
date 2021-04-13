@@ -1,4 +1,4 @@
-.categorie-wrapper {
+.category-wrapper {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -13,7 +13,7 @@
 	}
 }
 
-.categorie-thumbnail {
+.category-thumbnail {
 	position: relative;
 	width: 100%;
 	height: 0;
@@ -29,7 +29,7 @@
 	}
 }
 
-.categorie-title {
+.category-title {
 	font-size: 1em;
 	font-weight: 500;
 	margin: 0 0 0 1em;
@@ -37,7 +37,7 @@
 
 
 @media (max-width: $breakpoint-small) {
-	.categorie-thumbnail{
+	.category-thumbnail{
 		padding-top: 2.5em;
 	}
 }
