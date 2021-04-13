@@ -1,0 +1,7 @@
+.section-main{
+    padding-top: 7.375em;
+
+    @media (max-width: $breakpoint-normal) {
+        padding-top: 4.375em;
+    }
+}

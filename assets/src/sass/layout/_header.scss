@@ -4,8 +4,9 @@
 // Menu stylings file be found in components/mobile-menu
 
 .site-header {
-	position: relative;
-	// height: $layout-header-height;
+	position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .site-subheader {
@@ -49,14 +50,15 @@
 }
 
 .site-header-primary {
+	background-color: $color-bg-white;
+	border-bottom: 1px solid $color-border-light;
+
 	.site-header-inner {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		height: 4.375em;
 	}
-
-	border-bottom: 1px solid $color-border-light;
 }
 
 .site-branding {
@@ -131,5 +133,51 @@
 			display: flex;
 			align-items: center;
 		}
+	}
+}
+
+.mobile-menu{
+	display: none;
+}
+
+@media (max-width: $breakpoint-medium) {
+	.site-navigation-wrapper {
+		margin-left: 0.5em;
+	}
+
+	.site-branding {
+		.site-title {
+			a{
+				margin: 0 1em 0 0;
+			}
+		}
+	}
+}
+
+@media (max-width: $breakpoint-normal) {
+	.site-header-inner {
+		justify-content: space-between;
+	}
+
+	.site-navigation-wrapper {
+		width: fit-content;
+	}
+
+	.site-navigation-primary, .site-subheader {
+		display: none;
+	}
+
+	.site-branding {
+		.site-title {
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	.mobile-menu{
+		display: block;
+		padding: 1em;
+    margin-right: -1em;
 	}
 }
